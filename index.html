@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link href="/src/output.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+
+  <body class="bg-dark-main w-full h-[100vh] overflow-x-hidden text-white relative px-3 font-yekan" dir="rtl">
+    <div id="app" class="container mx-auto max-w-[1152px]">
+
+      <div id="navBar" class="h-[73px] flex items-center justify-between border-primary p-3 mt-5 relative rounded-[16px] overflow-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="w-7 h-7 fill-white cursor-pointer lg:hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <img src="./src/assets/images/logo.svg" class="hidden lg:block" alt="">
+
+        <div class="lg:flex items-center gap-16 hidden">
+          <span class="bg-gradient-to-r from-secondary to-primary inline-block text-transparent bg-clip-text font-bold">صفحه اصلی</span>
+          <span>سرویس ها</span>
+          <span>بازی ها</span>
+          <span>بلاگ</span>
+          <span>تماس با ما</span>
+        </div>
+
+        <button class="px-5 py-2 bg-gradient-to-l from-primary to-secondary text-xs mt-0">
+          ورود / ثبت نام
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="block lg:hidden w-0 overflow-hidden transition-all duration-200 bg-dark-main-50 inset-0 fixed z-40">
+        <div class="top-0 bottom-0 right-0 w-[350px] bg-dark-secondary z-50 absolute">
+          <div class="flex items-start justify-between p-5">
+            <img src="./src/assets/images/logo.svg" class="" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="w-7 h-7 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>            
+          </div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg mt-10">صفحه اصلی</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">سرویس ها</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">بازی ها</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">بلاگ</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">تماس با ما</div>
+        </div>
+      </div>
+
+      <div id="headerSection" class="flex items-center flex-col-reverse lg:mt-24 lg:justify-between lg:flex-row">
+        <div class="lg:ml-16 text-center lg:text-right flex flex-col items-center lg:items-start">
+          <span class="text-5xl lg:text-6xl font-bold text-primary">دنس بت،</span>
+          <div class="mt-2 text-xl lg:text-2xl font-bold">با هر پیش بینی، یک قدم به پیروزی نزدیک تر شوید!</div>
+          <div class="mt-5 lg:mt-10 opacity-50">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+          </div>
+
+          <button class="px-5 py-2 bg-gradient-to-l from-primary to-secondary mt-5 flex items-center">
+            همین حالا شروع کنید
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white mr-3" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>            
+          </button>
+        </div>
+  
+        <img src="./src/assets/images/img1.png" class="w-[300px] lg:w-auto" />
+      </div>
+
+      <div id="serviceSection" class="flex items-center flex-col mt-24 lg:justify-between lg:flex-row w-full">
+        <div class="lg:w-1/2 lg:ml-16 text-center lg:text-right flex flex-col items-center lg:items-start">
+          <span class="text-3xl font-bold">سرویس های ما</span>
+          <br>
+          <div class="lg:mt-5 opacity-50">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+          </div>
+
+          <button class="mt-5">
+            مشاهده سرویس ها
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white mr-3" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>            
+          </button>
+        </div>
+  
+        <div class="w-full lg:w-1/2 grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-2 grid-rows-2 mt-16 lg:mt-0 gap-5">
+          <div class="card card1">
+            <img src="./src/assets/images/card1.png" class="mb-5" alt="">
+
+            <span class="text-lg">پیش بینی مسابقات ورزشی</span>
+            <div class="w-[50px] h-[2px] my-3 bg-primary"></div>
+            <span class="opacity-50 text-xs text-justify w-3/4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با</span>
+          </div>
+          <div class="card card2">
+            <img src="./src/assets/images/card2.png" class="mb-5" alt="">
+
+            <span class="text-lg">پیش بینی مسابقات دیجیتال</span>
+            <div class="w-[50px] h-[2px] my-3 bg-[#DC72F1]"></div>
+            <span class="opacity-50 text-xs text-justify w-3/4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با</span>
+          </div>
+          <div class="card card3">
+            <img src="./src/assets/images/card4.png" class="mb-5" alt="">
+
+            <span class="text-lg">پرداخت وجه آنی</span>
+            <div class="w-[50px] h-[2px] my-3 bg-[#D25152]"></div>
+            <span class="opacity-50 text-xs text-justify w-3/4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با</span>
+          </div>
+          <div class="card card4">
+            <img src="./src/assets/images/card3.png" class="mb-5" alt="">
+
+            <span class="text-lg">پیش بینی کازینو</span>
+            <div class="w-[50px] h-[2px] my-3 bg-[#DC72F1]"></div>
+            <span class="opacity-50 text-xs text-justify w-3/4">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="gamesSection" class="text-center mt-44">
+        <div class="mt-24 text-4xl font-bol">بازی های پرطرفدار</div>
+        <div class="mt-3 text-lg opacity-50">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در پ</div>
+
+        <div class="game-cards-section mt-10 grid sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-x-5 gap-y-10">
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game3.png" class="-right-[100px] -top-0" alt="">
+          </div>
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game1.png" class="-right-[130px]" alt="">
+          </div>
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game5.png" class="-right-[30px]" alt="">
+          </div>
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game2.png" class="-right-[50px] top-0" alt="">
+          </div>
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game6.png" class="-right-[20px]" alt="">
+          </div>
+          <div>
+            <span class="text-primary font-bold text-lg">نام بازی</span>
+            <span>توضیحات بازی</span>
+            <img src="./src/assets/images/game4.png" class="-right-[120px] -top-[60px]" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="infoSection" class="relative px-5 lg:px-0 flex flex-col lg:flex-row text-center lg:text-right items-center justify-between mt-56">
+        <div class="lg:w-1/2 flex flex-col items-center lg:items-start">
+          <div class="font-bold text-3xl">شرط بندی بدون ریسک در هر جای دنیا</div>
+          <div class="mt-5 lg:text-justify">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در</div>
+          <div class="mt-10 opacity-50">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در پ
+          </div>
+
+          <button class="mt-7">
+            همین حالا شروع کنید
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white mr-3" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>            
+          </button>
+        </div>
+
+        <img src="./src/assets/images/info.png" class="mt-10 lg:mt-0" alt="">
+
+        <div class="absolute bg-primary-10 h-[120%] w-full -left-[55%] rounded-3xl"></div>
+      </div>
+
+      <div id="casinoSection" class="mt-56">
+        <div class="bg-primary-10 rounded-3xl lg:h-[280px] flex flex-col-reverse lg:flex-row items-center justify-between p-10 border-4 border-dark-secondary-50">
+          <div>
+            <div class="font-bold text-2xl">
+              ۲۰ درصد بونوس
+              <br>
+               خوش آمد گویی برای اولین پیش بینی!
+              </div>
+            <div class="mt-3 opacity-50">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از</div>
+
+            <button class="mt-7">
+              ثبت نام کنید
+  
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white mr-3" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+              </svg>            
+            </button>
+          </div>
+
+          <img src="./src/assets/images/casino.png" class="hidden lg:block mt-10 lg:mt-0" alt="">
+        </div>
+      </div>
+
+      <div id="blogsSection" class="text-center mt-44 mb-32 relative">
+        <div class="mt-24 text-4xl font-bold">مقالات</div>
+        <div class="mt-3 text-lg opacity-50">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در پ</div>
+
+        <div class="w-full grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-3 grid-rows-1 mt-10 gap-5 relative">
+          <div class="blog-card blog-card1">
+            <img src="./src/assets/images/blog1.png" class="mb-5" alt="">
+            <span class="text-sm text-center w-3/4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+            </span>
+          </div>
+          <div class="blog-card blog-card2">
+            <img src="./src/assets/images/blog2.png" class="mb-5" alt="">
+            <span class="text-sm text-center w-3/4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+            </span>
+          </div>
+          <div class="blog-card blog-card3">
+            <img src="./src/assets/images/blog3.png" class="mb-5" alt=""> 
+            <span class="text-sm text-center w-3/4">
+              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+            </span>
+          </div>
+
+          <div class="absolute cursor-pointer top-[50%] right-[-100px] translate-y-[-50%] text-xl">
+            <img src="./src/assets/images/rightChevron.svg" alt="">                 
+          </div>
+          <div class="absolute cursor-pointer top-[50%] left-[-100px] translate-y-[-50%]">
+            <img src="./src/assets/images/leftChevron.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-3/4 h-[1500px] opacity-20 rounded-full blur-[100px] absolute top-[-150px] right-[-150px] -z-10"></div>
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-3/4 h-[1500px] opacity-20 rounded-full blur-[100px] absolute top-[1050px] left-[-150px] -z-10"></div>
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-1/2 h-[1500px] opacity-20 rounded-full blur-[100px] absolute top-[2050px] -right-[300px] -z-10"></div>
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-[700px] h-[700px] opacity-20 rounded-full blur-[100px] absolute top-[3350px] left-[200px] -z-10"></div>
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-[500px] h-[500px] opacity-20 rounded-full blur-[100px] absolute top-[-150px] left-[-150px] -z-10"></div>
+
+    <script>
+      let isOpen = false;
+      const toggleMenu = () => {
+        isOpen = !isOpen;
+        
+        const menu = document.querySelector("#mobileMenu");
+        if(isOpen) {
+          menu.classList.add('w-full')
+          menu.classList.remove('w-0')
+        } else {
+          menu.classList.add('w-0')
+          menu.classList.remove('w-full')
+        }
+      }
+    </script>
+  </body>
+</html>
