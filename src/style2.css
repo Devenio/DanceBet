@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@font-face {
+  font-family: 'yekan';
+  src: url(./assets/fonts/Yekan.ttf);
+}
+
+@theme {  
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-dark-main: #0B0B0F;
+  --color-dark-main-50: rgba(0, 0, 0, 50%);
+  --color-dark-secondary: rgba(35, 35, 39);
+  --color-dark-secondary-50: rgba(35, 35, 39, 0.5);
+  --color-dark-secondary-18: rgba(35, 35, 39, 0.18);
+  --color-primary: #C39853;
+  --color-primary-10: rgba(195, 152, 83, 0.1);
+  --color-secondary: #FBF8C5;
+  --font-yekan: "yekan-regular"
+}
+
+:root {
+}
+
+* {
+  font-family: 'yekan';
+}
+
+/* #bg-effect-1 {
+  transform: rotate(45deg);
+  top: -50px;
+} */
+
+#navBar, .inner-shadow {
+  padding: 7px 26px;
+
+  background: rgba(35, 35, 39, 0.18);
+  box-shadow: inset 0px 0px 19.1px rgba(195, 152, 83, 0.1);
+}
+
+button {
+  @apply cursor-pointer px-5 py-2 bg-gradient-to-l from-secondary to-primary flex items-center rounded-3xl text-dark-main;
+}
+
+.card {
+  @apply bg-dark-secondary-18 w-full max-w-[300px] h-[318px] rounded-[25px] p-3 relative overflow-hidden after:absolute after:rounded-[25px] after:inset-[10px] after:bg-gradient-to-tr after:-z-50 before:-z-40 before:absolute before:inset-[11px] before:bg-dark-secondary before:rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer hover:bg-primary-10 transition-all duration-200 mx-auto;
+}
+.blog-card {
+  @apply bg-dark-secondary-18 w-full max-w-[300px] rounded-[25px] p-3 py-7 relative overflow-hidden after:absolute after:rounded-[25px] after:inset-[10px] after:bg-gradient-to-tr after:-z-50 before:-z-40 before:absolute before:inset-[13px] before:bg-dark-secondary before:rounded-[24px] flex flex-col items-center justify-center text-center cursor-pointer hover:bg-primary-10 transition-all duration-200 mx-auto after:from-primary after:via-transparent after:to-primary;
+}
+
+.card1 {
+  @apply after:from-primary after:via-transparent after:to-primary
+}
+.card2 {
+  @apply after:from-[#DC72F1] after:via-transparent after:to-[#DC72F1]
+}
+.card3 {
+  @apply after:from-[#D25152] after:via-transparent after:to-[#D25152]
+}
+.card4 {
+  @apply after:from-[#DC72F1] after:via-transparent after:to-[#DC72F1]
+}
+
+.game-cards-section div {
+  @apply rounded-[24px] relative bg-primary-10 flex flex-col items-start justify-center p-3 h-[120px] pr-[150px]
+}
+.game-cards-section div img {
+  @apply absolute
+}

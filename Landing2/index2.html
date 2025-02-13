@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/logo2.png" />
+    <link href="./src/output2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance Bet</title>
+  </head>
+
+  <body class="bg-dark-main w-full h-[100vh] overflow-x-hidden text-white relative px-3 font-yeka pt-5" dir="rtl">
+    <div class="absolute top-0 right-0 w-full -z-50 hidden lg:flex flex-col">
+        <img src="./src/assets/images2/bg.png" class="w-full object-contain" alt="">
+        <img src="./src/assets/images2/bg2.png" class="w-full mt-16" alt="">
+        <img src="./src/assets/images2/Group 15.png" class="w-full -mt-[500px]" alt="">
+    </div>
+
+    <div id="app" class="container mx-auto max-w-[1152px]">
+
+      <div id="navBar" class="h-[73px] flex items-center justify-between p-3 relative rounded-[16px] overflow-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="w-7 h-7 fill-white cursor-pointer lg:hidden" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <img src="./src/assets/images2/logo2.png" class="w-20 hidden lg:block" alt="">
+
+        <div class="lg:flex items-center gap-16 hidden">
+          <span class="bg-gradient-to-r from-secondary to-primary inline-block text-transparent bg-clip-text font-bold">صفحه اصلی</span>
+          <span>سرویس ها</span>
+          <span>بازی ها</span>
+          <span>بلاگ</span>
+          <span>تماس با ما</span>
+        </div>
+
+        <button class="px-5 py-2 bg-gradient-to-l from-primary to-secondary text-xs mt-0">
+          ورود / ثبت نام
+        </button>
+      </div>
+
+      <div id="mobileMenu" class="block lg:hidden w-0 overflow-hidden transition-all duration-200 bg-dark-main-50 inset-0 fixed z-40">
+        <div class="top-0 bottom-0 right-0 w-[350px] bg-dark-secondary z-50 absolute">
+          <div class="flex items-start justify-between p-5">
+            <img src="./src/assets/images2/logo2.png" class="w-20" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" onclick="toggleMenu()" class="w-7 h-7 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>            
+          </div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg mt-10">صفحه اصلی</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">سرویس ها</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">بازی ها</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">بلاگ</div>
+          <div class="p-3 px-5 border-b-2 border-dark-main-50 hover:bg-primary-10 cursor-pointer text-lg">تماس با ما</div>
+        </div>
+      </div>
+
+      <div id="headerSection" class="flex items-center flex-col-reverse mt-24 lg:mt-56 lg:justify-between lg:flex-row relative">
+        <div class="lg:ml-16 text-center lg:text-right flex flex-col items-center lg:items-start lg:w-1/2">
+          <span class="text-5xl lg:text-6xl font-bold text-primary">دنس بت،</span>
+          <div class="mt-2 text-xl lg:text-2xl font-bold">با هر پیش بینی، یک قدم به پیروزی نزدیک تر شوید!</div>
+          <div class="mt-5 lg:mt-10 opacity-50">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد کتابهای زیادی در شصت و سه درصد گذشته حال و آینده
+          </div>
+
+          <button class="px-5 py-2 bg-gradient-to-l from-primary to-secondary mt-5 flex items-center">
+            همین حالا شروع کنید
+
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-white mr-3" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+            </svg>            
+          </button>
+        </div>
+      </div>
+
+      <div id="serviceSection" class="mt-32 lg:mt-[500px]">
+        <div class="p-3 w-fit rounded-3xl border-[1px] border-primary text-primary inner-shadow mx-auto">
+            سرویس های ما
+        </div>
+
+        <div class="text-4xl font-bold text-center mt-10">
+            لورم اپیسوم
+        </div>
+        <div class="text-center mt-3">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+        </div>
+
+        <div class="mt-10">
+            <img src="./src/assets/images2/Frame 1261155180.png" class="hidden lg:block mx-auto relative z-50" alt="">
+
+            <div class="hidden lg:flex gap-32 w-full items-center justify-center -mt-16">
+                <img src="./src/assets/images2/Vector 216.png" alt="">
+                <img src="./src/assets/images2/Vector 212.png" alt="">
+            </div>
+            <div class="hidden lg:flex gap-[50px] w-full items-center justify-center -mt-16">   
+                <img src="./src/assets/images2/Vector 217.png" alt="">
+                <img src="./src/assets/images2/Vector 218.png" alt="">
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:gap-0 justify-between">
+                <div class="w-[275px] text-center flex flex-col items-center lg:-mt-24">
+                    <img src="./src/assets/images2/Frame 1261155215.png" alt="">
+    
+                    <div class="text-2xl font-bold mt-5 mb-1">
+                        پرداخت وجه آنی
+                    </div>
+    
+                    <span class="opacity-50 text-sm">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                    </span>
+                </div>
+                <div class="w-[275px] text-center flex flex-col items-center">
+                    <img src="./src/assets/images2/Frame 1261155216.png" alt="">
+    
+                    <div class="text-2xl font-bold mt-5 mb-1">
+                        پرداخت وجه آنی
+                    </div>
+    
+                    <span class="opacity-50 text-sm">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                    </span>
+                </div>
+                <div class="w-[275px] text-center flex flex-col items-center">
+                    <img src="./src/assets/images2/Frame 1261155217.png" alt="">
+    
+                    <div class="text-2xl font-bold mt-5 mb-1">
+                        پرداخت وجه آنی
+                    </div>
+    
+                    <span class="opacity-50 text-sm">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                    </span>
+                </div>
+                <div class="w-[275px] text-center flex flex-col items-center lg:-mt-24">
+                    <img src="./src/assets/images2/Frame 1261155218.png" alt="">
+    
+                    <div class="text-2xl font-bold mt-5 mb-1">
+                        پرداخت وجه آنی
+                    </div>
+    
+                    <span class="opacity-50 text-sm">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و 
+                    </span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div id="serviceSection" class="mt-32 lg:mt-[150px]">
+        <div class="p-3 w-fit rounded-3xl border-[1px] border-primary text-primary inner-shadow mx-auto">
+            مسابقات پیش رو
+        </div>
+
+        <div class="text-4xl font-bold text-center mt-10">
+            لورم اپیسوم
+        </div>
+        <div class="text-center mt-3">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+        </div>
+
+        <div class="mt-16 grid grid-cols-2 lg:grid-cols-4 grid-rows-3 lg:grid-rows-2 gap-5">
+            <div class="relative h-[220px] rounded-xl overflow-hidden">
+                <img src="./src/assets/images2/image 243.png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-xl lg:row-span-2">
+                <img src="./src/assets/images2/image 241 (1).png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-xl lg:col-span-2">
+                <img src="./src/assets/images2/image 242 (1).png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-xl">
+                <img src="./src/assets/images2/image 244.png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-xl">
+                <img src="./src/assets/images2/image 246.png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+            <div class="relative overflow-hidden rounded-xl">
+                <img src="./src/assets/images2/image 245.png" class="h-full w-full object-top absolute inset-0 object-cover " alt="">
+
+                <div class="absolute inset-0 p-5 flex flex-col items-start justify-end">
+                    <span class="text-xl">نام بازی</span>
+                    <span class="opacity-50">توضیحات بازی</span>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="mt-[150px] w-full p-5 lg:p-0 lg:h-[275px] relative rounded-[200px] overflow-hidden flex flex-col items-center justify-center">
+        <img src="./src/assets/images2/pexels-rodnae-productions-8097332 1.png" class="object-cover absolute inset-0 -z-50" alt="">
+
+        <span class="font-bold text-2xl lg:text-4xl">20 درصد بونوس!</span>
+        <div class="font-bold text-2xl lg:text-4xl mt-3 mb-7">خوش آمد گویی برای اولین پیش بینی</div>
+        <button>ثبت نام کنید</button>
+      </div>
+
+      <div class="mt-[150px] w-full bg-dark-secondary-50 border-[1px] border-primary rounded-2xl flex flex-col lg:flex-row items-center p-5 px-10 justify-between gap-24">
+        <div>
+            <div class="text-3xl font-bold">شرط بندی بدون ریسک در هرجای دنیا</div>
+            <div class="mt-5 font-bold text-xl">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در 
+            </div>
+            <div class="mt-5 opacity-50">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در پ 
+            </div>
+            <button class="mt-5">
+                همین حالا شروع کنید
+            </button>
+        </div>
+
+        <img src="./src/assets/images2/8 503.png" class="rounded-xl" alt="">
+      </div>
+
+        <div id="commentsSection" class="mt-[150px] w-full">
+            <div class="p-3 w-fit rounded-3xl border-[1px] border-primary text-primary inner-shadow mx-auto">
+                مسابقات پیش رو
+            </div>
+
+            <div class="text-4xl font-bold text-center mt-10">
+                لورم اپیسوم
+            </div>
+            <div class="text-center mt-3">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+            </div>
+
+            <div class="my-16 mb-32 w-full flex flex-col lg:flex-row items-center justify-between gap-5">
+                <div class="border-[1px] border-primary rounded-xl p-7 flex flex-col items-center gap-10">
+                    <div>
+                        <img src="./src/assets/images2/Text.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای 
+                    </div>
+                    <div class="font-bol text-primary text-xl">
+                        مهدی
+                    </div>
+                </div>
+                <div class="border-[1px] border-primary rounded-xl p-7 flex flex-col items-center gap-10">
+                    <div>
+                        <img src="./src/assets/images2/Text.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای 
+                    </div>
+                    <div class="font-bol text-primary text-xl">
+                        مهدی
+                    </div>
+                </div>
+                <div class="border-[1px] border-primary rounded-xl p-7 flex flex-col items-center gap-10">
+                    <div>
+                        <img src="./src/assets/images2/Text.png" alt="">
+                    </div>
+                    <div class="text-center">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای 
+                    </div>
+                    <div class="font-bol text-primary text-xl">
+                        مهدی
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bg-effect-1" class="bg-radial from-primary to-transparent transform -rotate-45 w-3/4 h-[1500px] opacity-20 rounded-full blur-[150px] absolute top-[1050px] right-[-950px] -z-10"></div>
+
+    <script>
+      let isOpen = false;
+      const toggleMenu = () => {
+        isOpen = !isOpen;
+        
+        const menu = document.querySelector("#mobileMenu");
+        if(isOpen) {
+          menu.classList.add('w-full')
+          menu.classList.remove('w-0')
+        } else {
+          menu.classList.add('w-0')
+          menu.classList.remove('w-full')
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
     server: {
-        port: 3006,
+        port: 1010,
     },
     plugins: [
         tailwindcss(),
