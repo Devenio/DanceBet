@@ -62,9 +62,9 @@ button {
   @apply after:from-[#DC72F1] after:via-transparent after:to-[#DC72F1]
 }
 
-.game-cards-section div {
+.game-cards-section a {
   @apply rounded-[24px] relative bg-primary-10 flex flex-col items-start justify-center p-3 h-[120px] pr-[150px]
 }
-.game-cards-section div img {
+.game-cards-section a img {
   @apply absolute
 }

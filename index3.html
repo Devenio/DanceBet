@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="w-screen overflow-hidden">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/logo2.png" />
     <link href="./src/output3.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
     <title>Dance Bet</title>
   </head>
 
@@ -18,11 +18,11 @@
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
         
-        <span class="hidden lg:block text-primary border-b-2 border-primary font-bold cursor-pointer">Home</span>
-        <span class="hidden lg:block hover:text-primary font-bold cursor-pointer">Games</span>
-        <span class="hidden lg:block hover:text-primary font-bold cursor-pointer">Blog</span>
-        <span class="hidden lg:block hover:text-primary font-bold cursor-pointer">About Us</span>
-        <span class="hidden lg:block hover:text-primary font-bold cursor-pointer">Contact</span>
+        <a href="#" class="hidden lg:block text-primary border-b-2 border-primary font-bold cursor-pointer">Home</a>
+        <a href="#" class="hidden lg:block hover:text-primary font-bold cursor-pointer">Games</a>
+        <a href="#" class="hidden lg:block hover:text-primary font-bold cursor-pointer">Blog</a>
+        <a href="#" class="hidden lg:block hover:text-primary font-bold cursor-pointer">About Us</a>
+        <a href="#" class="hidden lg:block hover:text-primary font-bold cursor-pointer">Contact</a>
       </div>
 
       <div id="mobileMenu" class="block lg:hidden w-0 overflow-hidden transition-all duration-200 bg-dark-main-50 inset-0 fixed z-40">
@@ -53,7 +53,9 @@
           </div>
 
           <button class="mt-5">
-            Get Started     
+            <a href="#">
+              Get Started     
+            </a>
           </button>
         </div>
         
@@ -88,34 +90,34 @@
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 row-auto mt-10">
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/1.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          </a>
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/2.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          </a>
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/3.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          </a>
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/4.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          </a>
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/5.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
-          <div class="rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
+          </a>
+          <a href="#" class="cursor-pointer rounded-xl relative flex items-center justify-center text-5xl font-bold w-full h-[260px] overflow-hidden">
             <img src="./src/assets/images3/6.png" class="-z-10 absolute w-full h-full object-cover" alt="">
             <span>Rulet</span>
-          </div>
+          </a>
         </div>
       </div>
 
-      <div id="sliderSection" class="relative flex items-center flex-col-reverse mt-24 lg:mt-48 lg:justify-between lg:flex-row">
+      <div id="sliderSection" class="flex items-center flex-col-reverse mt-24 lg:mt-48 lg:justify-between lg:flex-row">
         <div class="mt-5 lg:mt-0 lg:ml-16 text-center lg:text-left lg:mr-24 flex flex-col items-center lg:items-start">
           <div class="mt-2 text-xl lg:text-4xl font-bold">
             Bahis Dünyasında Kazanmanın Yolları: Stratejiler ve İpuçları
@@ -126,13 +128,15 @@
           </div>
 
           <button class="mt-5">
-            More     
+            <a href="#">
+              More
+            </a>
           </button>
         </div>
 
         <img src="./src/assets/images3/bg.png" class="w-[200px] lg:w-auto" />
+        <img src="./src/assets/images3/sgb 1.png" class="-z-50 hidden lg:block absolute max-h-[700px] object-cover right-0 w-screen bg-primary-10" />
       </div>
-      <img src="./src/assets/images3/sgb 1.png" class="hidden lg:block absolute top-[2630px] max-h-[700px] object-cover right-0 w-screen bg-primary-10" />
 
       <div id="options" class="mt-24 md:mt-48">
         <div class="font-bold text-2xl text-center">
@@ -177,7 +181,7 @@
           <div onclick="toggleAccordion(1)" class="w-full flex justify-between items-center py-5 bg-white-50 rounded-3xl p-5">
             <span> Bahis oynamaya başlamak için ne yapmam gerekiyor?</span>
             <span id="icon-1" class="text-slate-800 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
               </svg>
             </span>
@@ -192,7 +196,7 @@
           <div onclick="toggleAccordion(2)" class="w-full flex justify-between items-center py-5 bg-white-50 rounded-3xl p-5">
             <span> Bahis oynamaya başlamak için ne yapmam gerekiyor?</span>
             <span id="icon-2" class="text-slate-800 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
               </svg>
             </span>
@@ -207,7 +211,7 @@
           <div onclick="toggleAccordion(3)" class="w-full flex justify-between items-center py-5 bg-white-50 rounded-3xl p-5">
             <span> Bahis oynamaya başlamak için ne yapmam gerekiyor?</span>
             <span id="icon-3" class="text-slate-800 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
               </svg>
             </span>
@@ -222,7 +226,7 @@
           <div onclick="toggleAccordion(4)" class="w-full flex justify-between items-center py-5 bg-white-50 rounded-3xl p-5">
             <span> Bahis oynamaya başlamak için ne yapmam gerekiyor?</span>
             <span id="icon-4" class="text-slate-800 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
               </svg>
             </span>
@@ -237,7 +241,7 @@
           <div onclick="toggleAccordion(5)" class="w-full flex justify-between items-center py-5 bg-white-50 rounded-3xl p-5">
             <span> Bahis oynamaya başlamak için ne yapmam gerekiyor?</span>
             <span id="icon-5" class="text-slate-800 transition-transform duration-300">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
               </svg>
             </span>
@@ -279,14 +283,14 @@
      
         // SVG for Minus icon
         const minusSVG = `
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
             <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
           </svg>
         `;
      
         // SVG for Plus icon
         const plusSVG = `
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-7 h-7">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#ffffff" class="w-7 h-7">
             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
           </svg>
         `;
